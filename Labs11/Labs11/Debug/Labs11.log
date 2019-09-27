@@ -1,29 +1,5 @@
-﻿Build started 14.09.2019 10:33:14.
-     1>Project "D:\RepositHub\OSISP_WinApi\Labs11\Labs11\Labs11.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "D:\RepositHub\OSISP_WinApi\Labs11\Debug\".
-       InitializeBuildStatus:
-         Creating "Debug\Labs11.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt HelloKsis.cpp
-         HelloKsis.cpp
-       ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Labs11.exe.embed.manifest.res" Debug\Labs11_manifest.rc 
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Labs11.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.lib" /MACHINE:X86 Debug\Labs11.exe.embed.manifest.res
-         Debug\HelloKsis.obj
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Labs11.exe.embed.manifest" /manifest Debug\Labs11.exe.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Labs11.exe.embed.manifest.res" Debug\Labs11_manifest.rc 
-       LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Labs11.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.lib" /MACHINE:X86 Debug\Labs11.exe.embed.manifest.res
-         Debug\HelloKsis.obj
-         Labs11.vcxproj -> D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.exe
-       FinalizeBuildStatus:
-         Deleting file "Debug\Labs11.unsuccessfulbuild".
-         Touching "Debug\Labs11.lastbuildstate".
-     1>Done Building Project "D:\RepositHub\OSISP_WinApi\Labs11\Labs11\Labs11.vcxproj" (build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:08.72
+﻿  HelloKsis.cpp
+d:\reposithub\osisp_winapi\labs11\labs11\helloksis.cpp(99): warning C4101: 'hBrush': unreferenced local variable
+d:\reposithub\osisp_winapi\labs11\labs11\helloksis.cpp(98): warning C4101: 'hmdc': unreferenced local variable
+HelloKsis.obj : error LNK2019: unresolved external symbol __imp__TransparentBlt@44 referenced in function "void __cdecl DrawPlayer(struct GameObject *,struct HDC__ *,struct HDC__ *)" (?DrawPlayer@@YAXPAUGameObject@@PAUHDC__@@1@Z)
+D:\RepositHub\OSISP_WinApi\Labs11\Debug\Labs11.exe : fatal error LNK1120: 1 unresolved externals
