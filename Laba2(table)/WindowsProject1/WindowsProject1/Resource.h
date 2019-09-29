@@ -2,6 +2,7 @@
 // Включаемый файл, созданный в Microsoft Visual C++.
 // Используется WindowsProject1.rc
 
+#define MAX_LOADSTRING 100
 #define IDS_APP_TITLE			103
 
 #define IDR_MAINFRAME			128
@@ -13,6 +14,7 @@
 #define IDI_SMALL				108
 #define IDC_WINDOWSPROJECT1			109
 #define IDC_MYICON				2
+
 #ifndef IDC_STATIC
 #define IDC_STATIC				-1
 #endif

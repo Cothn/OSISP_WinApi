@@ -1,1 +1,4 @@
-﻿  WindowsProject1.vcxproj -> D:\RepositHub\OSISP_WinApi\Laba2(table)\WindowsProject1\Debug\WindowsProject1.exe
+﻿  WindowsProject1.cpp
+D:\RepositHub\OSISP_WinApi\Laba2(table)\WindowsProject1\WindowsProject1\WindowsProject1.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\RepositHub\OSISP_WinApi\Laba2(table)\WindowsProject1\WindowsProject1\WindowsProject1.cpp(85): error C2440: =: невозможно преобразовать "const char [7]" в "LPCWSTR"
+  D:\RepositHub\OSISP_WinApi\Laba2(table)\WindowsProject1\WindowsProject1\WindowsProject1.cpp(85): note: Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
