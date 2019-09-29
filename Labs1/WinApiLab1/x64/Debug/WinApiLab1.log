@@ -1,4 +1,0 @@
-﻿  Source.cpp
-D:\RepositHub\OSISP_WinApi\Labs1\WinApiLab1\Source.cpp(112): error C2065: GWL_HINSTANCE: необъявленный идентификатор
-D:\RepositHub\OSISP_WinApi\Labs1\WinApiLab1\Source.cpp(112): error C2789: "hInstance": требуется инициализация объекта типа класса, квалифицированного как const
-  D:\RepositHub\OSISP_WinApi\Labs1\WinApiLab1\Source.cpp(112): note:  см. объявление "hInstance"
