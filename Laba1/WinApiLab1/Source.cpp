@@ -206,8 +206,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message,
 	case WM_PAINT:
 
 		hdc = BeginPaint(hWnd, &ps);
+
 		DrawPlayer(&player, hdc, hdcMemSurface);
-		//Ellipse(hdc, 0, 0, 10, 150);
+
 		EndPaint(hWnd, &ps);
 		break;
 
@@ -370,6 +371,9 @@ void DrawPlayer(ControlObject* object, HDC hdc,  HDC hdcMemSurface)
 		object->image.height,//¬ысота в логических единицах исходного пр€моугольника
 		RGB(255, 255, 255)//÷вет RGB в исходном растровом изображении считаетс€ прозрачным.
 	);
+	//Rectangle(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
+	//Ellipse(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
+
 }
 
 void OnWindowResize(ControlObject* object, RECT gameField)
@@ -404,6 +408,7 @@ static struct Image loadImage(LPCTSTR path, HINSTANCE hInstance)
 	GetObject(image.hBitmap, sizeof(bitmapInfo), &bitmapInfo);
 	image.width = bitmapInfo.bmWidth;
 	image.height = bitmapInfo.bmHeight;
+
 
 	return image;
 }
