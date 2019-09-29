@@ -1,1 +1,4 @@
-﻿  WinApiLab1.vcxproj -> D:\универ\__OSISP_2Sem\WinApiLab1\Debug\WinApiLab1.exe
+﻿  Source.cpp
+D:\RepositHub\OSISP_WinApi\Laba1(wasd)\WinApiLab1\Source.cpp(87): warning C4101: hBrush: неиспользованная локальная переменная
+D:\RepositHub\OSISP_WinApi\Laba1(wasd)\WinApiLab1\Source.cpp(86): warning C4101: hmdc: неиспользованная локальная переменная
+  WinApiLab1.vcxproj -> D:\RepositHub\OSISP_WinApi\Laba1(wasd)\Debug\WinApiLab1.exe

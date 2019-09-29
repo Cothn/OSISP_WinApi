@@ -1,7 +1,5 @@
 // Microsoft Visual C++ generated resource script.
 //
-#pragma code_page(65001)
-
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
@@ -15,10 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Russian (Russia) resources
+// Русский (Россия) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
 LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -45,15 +44,16 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // Russian (Russia) resources
+#endif    // Русский (Россия) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
+// Английский (США) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -62,9 +62,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 IDB_BITMAP1             BITMAP                  "1.bmp"
 
-IDB_BITMAP2             BITMAP                  "2.bmp"
-
-#endif    // English (United States) resources
+#endif    // Английский (США) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

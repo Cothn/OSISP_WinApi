@@ -1,5 +1,5 @@
 #include <windows.h>
-#include <wingdi.h>
+//#include <wingdi.h>
 
 struct Image
 {

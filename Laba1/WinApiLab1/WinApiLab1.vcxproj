@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="1.bmp" />
+    <Image Include="2.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

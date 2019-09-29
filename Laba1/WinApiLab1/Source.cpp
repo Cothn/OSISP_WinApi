@@ -31,13 +31,13 @@ void DrawPlayer(ControlObject* object, HDC hdc, HDC hdcMemSurface);
 void SetPlayerCoordinates(ControlObject* object, int x, int y);
 bool IsFocusOnPlayer(ControlObject* object, int x, int y);
 
-static int PLAYERWIDTH = 70;
+static int PLAYERWIDTH = 80;
 static int PLAYERHEIGHT = 90;
 static ControlObject player;
 static HDC hdcMemSurface;
 int wheelDelta = 0;
 int delta = 10;
-char szImageName[] = "IDB_BITMAP2";
+
 static bool is_up = false;
 static bool is_down = false;
 static bool is_left = false;
