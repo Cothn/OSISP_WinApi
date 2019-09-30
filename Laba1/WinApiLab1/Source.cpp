@@ -113,7 +113,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message,
 		const HDC hdcWin = GetDC(hWnd);
 		hdcMemSurface = CreateCompatibleDC(hdcWin);
 		ReleaseDC(hWnd, hdcWin);
-		SetTimer(hWnd, 1, 15, NULL);
+		SetTimer(hWnd, 1, 1000/35, NULL);
 		return 0;
 	}
 
@@ -371,8 +371,8 @@ void DrawPlayer(ControlObject* object, HDC hdc,  HDC hdcMemSurface)
 		object->image.height,//¬ысота в логических единицах исходного пр€моугольника
 		RGB(255, 255, 255)//÷вет RGB в исходном растровом изображении считаетс€ прозрачным.
 	);
-	//Rectangle(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
-	//Ellipse(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
+	Rectangle(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
+	Ellipse(hdc, object->x, object->y, object->x + PLAYERWIDTH, object->y + PLAYERHEIGHT);
 
 }
 
