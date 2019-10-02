@@ -6,12 +6,13 @@
 #include "Resource.h"
 
 
-
 // Глобальные переменные:
 HINSTANCE hInst;                                // текущий экземпляр
 WCHAR szTitle[MAX_LOADSTRING];                  // Текст строки заголовка
+WCHAR szString1[MAX_LOADSTRING];                  // Текст строки заголовка
 WCHAR szWindowClass[MAX_LOADSTRING];            // имя класса главного окна
-#define Cwidth 3
+WCHAR sz3dot[4];            // ...
+#define Cwidth 4
 #define Cheigth 8
 
 void DrawTable(HDC hdc, int n, int m, RECT field);
@@ -33,6 +34,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     // Инициализация глобальных строк
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
+	LoadStringW(hInstance, IDS_STRING105, sz3dot, 4);
+	LoadStringW(hInstance, IDS_STRING1, szString1, MAX_LOADSTRING);
     LoadStringW(hInstance, IDC_WINDOWSPROJECT1, szWindowClass, MAX_LOADSTRING);
     MyRegisterClass(hInstance);
 
@@ -113,15 +116,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	switch (message)
 	{
 
-	case WM_LBUTTONUP:
-	{
-		//if (is_player_catch)
-		UpdateWindow(hWnd);
-	}
-	break;
 	case WM_SIZE:
 	{
-		//OnWindowResize(&player, rect);
+
 		UpdateWindow(hWnd);
 	}
 	break;
@@ -145,17 +142,46 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 		LONG width = (field.right - field.left) / m;
 		LONG height = (field.bottom - field.top) / n;
-		int k;
+		int k, i, l;
 		HBRUSH hBrush;
 		hBrush = CreateSolidBrush(RGB(250,200,100));//создание кисти
 		SelectObject(hdc, hBrush);//выбор кисти
 		for (k = 1; k < n; k++) {
-			MoveToEx(hdc, field.left, k*height, NULL); //сделать текущими координаты x1, y1
+			MoveToEx(hdc, field.left, k*height, NULL); //сделать текущими координаты 
 			LineTo(hdc, field.right, k* height);
 		}
 		for (k = 1; k < m; k++) {
-			MoveToEx(hdc, k * width, field.top, NULL); //сделать текущими координаты x1, y1
+			MoveToEx(hdc, k * width, field.top, NULL); 
 			LineTo(hdc, k * width, field.bottom);
 		}
+		SIZE Len;
+		int strLen = 50;
+		GetTextExtentPoint32(hdc, szTitle, strLen, &Len);
+		int kolStr = (10+Len.cx) / width +1;
+		int lastSym;
+		for (k = 0; k < m; k++) {
+			for (i = 0; i < n; i++) {
+				lastSym = 0;
+				l = 0;
+				while (lastSym <= strLen ) {
+						if ((i * height + (l+1) * Len.cy + 2 + Len.cy) <= height * (i+1)) {
+							TextOut(hdc, k * width + 10, i * height + l * Len.cy + 2, &szString1[lastSym], strLen / kolStr);
+							lastSym = lastSym + strLen / kolStr;
+							l++;
+						}
+						else
+						{
+							SIZE len;
+							GetTextExtentPoint32(hdc, &szString1[lastSym], strLen / kolStr - 3, &len);
+							TextOut(hdc, k * width + 10, i * height + l * Len.cy + 2, &szString1[lastSym], strLen / kolStr - 3);
+							TextOut(hdc, k * width + 10 + len.cx , i * height + l * Len.cy + 2, sz3dot, 3);
+							break;
+						}
+					
+
+				}
+			}
+		}
+
 	}
 
