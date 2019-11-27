@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  Dll2.cpp
+  dllmain.cpp
+  Source.cpp
+c:\users\admin\source\repos\dll2\dll2\source.cpp(20): warning C4091: typedef : пропускается слева от "PARAMS", когда ни одна переменная не объявлена
+c:\users\admin\source\repos\dll2\dll2\source.cpp(60): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\admin\source\repos\dll2\dll2\source.cpp(66): warning C4018: >=: несоответствие типов со знаком и без знака
+c:\users\admin\source\repos\dll2\dll2\source.cpp(112): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\admin\source\repos\dll2\dll2\source.cpp(118): warning C4018: >=: несоответствие типов со знаком и без знака
+  Создание кода...
+     Создается библиотека C:\Users\Admin\source\repos\Dll2\Debug\Dll2.lib и объект C:\Users\Admin\source\repos\Dll2\Debug\Dll2.exp
+  Dll2.vcxproj -> C:\Users\Admin\source\repos\Dll2\Debug\Dll2.dll
