@@ -1,1 +1,11 @@
-﻿  Dll1.vcxproj -> D:\RepositHub\OSISP_WinApi\lab3\ConsoleApplication2\Debug\Dll1.dll
+﻿  stdafx.cpp
+  Dll1.cpp
+  dllmain.cpp
+  Source.cpp
+D:\RepositHub\OSISP_WinApi\lab3\Dll1\Dll1\Source.cpp(48): warning C4018: '<': signed/unsigned mismatch
+D:\RepositHub\OSISP_WinApi\lab3\Dll1\Dll1\Source.cpp(54): warning C4018: '>=': signed/unsigned mismatch
+D:\RepositHub\OSISP_WinApi\lab3\Dll1\Dll1\Source.cpp(101): warning C4018: '<': signed/unsigned mismatch
+D:\RepositHub\OSISP_WinApi\lab3\Dll1\Dll1\Source.cpp(107): warning C4018: '>=': signed/unsigned mismatch
+  Generating Code...
+     Creating library D:\RepositHub\OSISP_WinApi\lab3\ConsoleApplication2\Debug\Dll1.lib and object D:\RepositHub\OSISP_WinApi\lab3\ConsoleApplication2\Debug\Dll1.exp
+  Dll1.vcxproj -> D:\RepositHub\OSISP_WinApi\lab3\ConsoleApplication2\Debug\Dll1.dll

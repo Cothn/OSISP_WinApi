@@ -29,8 +29,8 @@ extern "C" int __declspec(dllexport) _stdcall changestr(char* searchstr, char* n
 
 	while ((adr < (LPBYTE)sysinfo.lpMaximumApplicationAddress) && (info.State != MEM_COMMIT))
 	{
-		adr += sysinfo.dwPageSize;
 		VirtualQueryEx(GetCurrentProcess(), adr, &info, sizeof(info));
+		adr += sysinfo.dwPageSize;
 	}
 
 	while (adr < (LPBYTE)sysinfo.lpMaximumApplicationAddress)
@@ -61,13 +61,14 @@ extern "C" int __declspec(dllexport) _stdcall changestr(char* searchstr, char* n
 							j = 0;
 							break;
 						}
-						if (j == 0) startadr = adr + position;
-						pageindex++;
-						if ((searchstrlen - 1) == j)
+						if (j == 0) 
+							startadr = adr + position;
+						if (j == (searchstrlen - 1))
 						{
 							j = 0;
-							WriteProcessMemory(GetCurrentProcess(), startadr - 1, newstr, count_symb_to_replace, 0);
+							WriteProcessMemory(GetCurrentProcess(), startadr - 1, newstr, count_symb_to_replace, NULL);
 						}
+						pageindex++;
 					}
 				}
 			}
@@ -115,13 +116,14 @@ void find_in_next_pages(int j, LPBYTE startadr, LPBYTE adr, char* searchstr, cha
 							break;
 							return;
 						}
-						if (j == 0) startadr = adr + position;
-						pageindex++;
+						if (j == 0) 
+							startadr = adr + position;
 						if ((searchstrlen - 1) == j)
 						{
 							j = 0;
 							WriteProcessMemory(GetCurrentProcess(), startadr - 1, newstr, count_symb_to_replace, 0);
 						}
+						pageindex++;
 					}
 				}
 			}
