@@ -1,17 +1,1 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: устранение рисков Spectre включено, однако библиотеки Spectre с устраненными рисками не найдены. Убедитесь, что рабочая нагрузка Visual Studio включает библиотеки Spectre с устраненными рисками. Дополнительные сведения см. в статье https://aka.ms/Ofhn4c.
-  pch.cpp
-  ssMain.cpp
-  stdafx.cpp
-  StringSorter.cpp
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(24): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(90): warning C4018: >=: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(95): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(124): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(134): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(136): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(154): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\aleksey\desktop\универ\5_сем\osisp\lab4\stringsorter\stringsorter.cpp(156): warning C4018: <: несоответствие типов со знаком и без знака
-  TasksQueue.cpp
-  ThreadPool.cpp
-  Создание кода...
-LINK : fatal error LNK1104: не удается открыть файл "MSVCRTD.lib"
+﻿  StringSorter.vcxproj -> D:\RepositHub\OSISP_WinApi\laba4(MergeSorter)\StringSorter\Debug\StringSorter.exe

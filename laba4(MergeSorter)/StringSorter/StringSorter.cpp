@@ -133,7 +133,7 @@ vector<string>* StringSorter::mergeSortedVectors(vector<vector<string>*>* vector
 
 		for (int i = 0; i < vectors->size(); i++)
 		{
-			if (indexVector.at(i) < vectors->at(i)->size() && vectors->at(i)->at(indexVector.at(i)) < minString)
+			if (indexVector.at(i) < vectors->at(i)->size() && (vectors->at(i)->at(indexVector.at(i)) < minString))
 			{
 				minString = vectors->at(i)->at(indexVector.at(i));
 				minStringIndex = i;
